@@ -1,0 +1,97 @@
+:root {
+  --blue: #67f6e3;
+  --white: #f6f7f8;
+  --black: #2c2e31;
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  padding: 2rem;
+  place-content: center;
+  min-height: 100vh;
+  background-color: var(--black);
+  color: var(--white);
+  text-align: center;
+  font-size: 1.25rem;
+  font-family: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans",
+    "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed",
+    "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue",
+    Helvetica, Arial, sans-serif;
+}
+
+p {
+  margin: 2rem 0 0;
+}
+
+#button {
+  background: var(--blue);
+  color: var(--black);
+  padding: 1rem 2rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 4px;
+  transition: 0.1s ease transform;
+  cursor: pointer;
+}
+
+#button:active {
+  transform: translatey(3px);
+}
+
+/* #reveal {
+    background: var(--blue);
+    color: var(--black);
+    padding: 1rem 2rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 4px;
+    transition: 0.1s ease transform;
+    cursor: pointer;
+  }
+  
+  #reveal:active {
+    transform: translatey(3px);
+  } */
+
+#punchline {
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+#error {
+  color: #ff4d51;
+}
+
+#reveal {
+  display: inline-block;
+  padding: 5px 10px;
+  font-size: 20px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: var(--black);
+  background-color: #67f6e3;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 3px #999;
+  position: relative;
+  left: 80px;
+  top: 17px;
+
+}
+
+
+
+#reaveal:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}

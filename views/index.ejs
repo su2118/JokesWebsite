@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <form action="/show" method="GET">
+      <button id="button" type='button'>Get Joke</button>
+      <p id="setup"></p>
+      <button id="reveal" type='button' style="display:none;">Punchline</button>
+      <p id="punchline" style="display:none;"></p>
+      <p id="error"></p>
+    </form>
+    <!-- <script>
+        const getJoke = document.getElementById ('get')
+        const setup = document.getElementById('setup')
+        
+        const baseUrl='http://localhost:5000/'
+        getJoke.addEventListener('click', getInfo)
+        async function  getInfo(e){
+            e.preventDefault()
+            const res = await fetch(baseUrl,
+            {
+                method: 'GET'
+            })
+            console.log(res)
+            const data = await res.json()
+            setup.value = data
+        }
+
+    </script>  -->
+
+</body>
+<script src="js/script.js"></script>
+</html>
